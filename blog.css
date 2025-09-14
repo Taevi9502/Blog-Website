@@ -1,0 +1,106 @@
+/* Reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    background: #f9f9f9;
+    color: #333;
+}
+/* Navbar */
+header{
+    background: #222;
+    color: #fff;
+    padding: 15px 30px;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+nav ul li a.active, nav ul li a:hover{
+    color: #f39c12;
+}
+/* Hero */
+.hero{
+    text-align: center;
+    padding: 60px 20px;
+    background: linear-gradient(to right, #f39c12, #e67e22);
+    color: #fff;
+}
+.hero h1{
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+/* Post */
+.posts{
+    padding: 40px 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+.posts h2{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.post-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+.post img{
+    width: 100%;
+    border-radius: 6px;
+    height: 330px;
+}
+.post h3{
+    margin: 10px 0;
+}
+.btn{
+    display: inline-block;
+    padding: 8px 15px;
+    background: #f39c12;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.btn:hover{
+    background: #e67e22;
+}
+/* About */
+.about, .contact{
+    max-width: 800px;
+    margin: auto;
+    padding: 40px 20px;
+    background: #fff;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+.contact form input, .contact form textarea{
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+/* Footer */
+footer{
+    text-align: center;
+    padding: 20px;
+    background: #222;
+    color: #fff;
+    margin-top: 30px;
+}
